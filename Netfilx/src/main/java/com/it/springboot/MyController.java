@@ -32,6 +32,7 @@ public class MyController {
 	
 	@RequestMapping("/memberSaveDB")
     public String memberSaveDB(HttpServletRequest req){
+	    // hello hahah
     	String email=req.getParameter("email");
     	String encpwd= pwdEncoder.encode(req.getParameter("password"));
     	String username=req.getParameter("username");
