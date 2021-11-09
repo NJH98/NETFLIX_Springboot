@@ -25,15 +25,15 @@ public class MyUserDetailsService implements UserDetailsService {
 		UserlistDto dto;
 		
 		if(list.size() > 0 ) { 
-			dto = list.get(0);  //회원 정보가 dto에 담김
-			System.out.println("회원 맞는디...");
+			dto = list.get(0);  //�쉶�썝 �젙蹂닿� dto�뿉 �떞源�
+			System.out.println("회원 맞는디");
 		}
 		else {
-			dto = new UserlistDto(); //빈객체
-			System.out.println("회원 아닌디...");
+			dto = new UserlistDto(); //鍮덇컼泥�
+			System.out.println("회원 아닌디");
 		}
 		
-		MyUserDetails pd = new MyUserDetails(dto);   		                                          // 시큐리티 세션에 저장됨
+		MyUserDetails pd = new MyUserDetails(dto);   		                                          // �떆�걧由ы떚 �꽭�뀡�뿉 ���옣�맖
 		return pd;  
 	}
 	

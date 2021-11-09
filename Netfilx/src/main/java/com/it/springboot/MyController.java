@@ -46,7 +46,7 @@ public class MyController {
     	dto.setPhone(phone);
     	dto.setAge(age);
     	dto.setSx(1);
-    	dto.setAuthority("ROLE_USER");
+    	dto.setAuthority("USER");
     	dto.setEnabled(1);
     	
     	

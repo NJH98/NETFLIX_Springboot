@@ -3,6 +3,7 @@ package com.it.springboot.auth;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -40,16 +41,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll();
         
         http
-        	.csrf().disable()	//csrf방지
-        	.cors().disable();	//cors방지
+        	.csrf().disable()
+        	.cors().disable();
         
     }
     
-    // passwordEncoder() 추가
+    // passwordEncoder() 異붽�
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
       return new BCryptPasswordEncoder();
     }
+    
+//    @Override
+//
+//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//
+//    System.out.println(passwordEncoder().encode("rmsepdy3"));
+//    }
+    
 }
 
 
