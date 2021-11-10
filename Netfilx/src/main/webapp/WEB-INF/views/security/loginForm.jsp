@@ -28,9 +28,23 @@
             <div><input id="input2" type="password" placeholder="비밀번호" name="j_password"></div>
             <div><input id="input3" type="submit" value="로그인"></div>
         </form>
+
         <div class="enter1">
             <div><input id="cb1" type = "checkbox"><label for="cb1">V</label>로그인 정보 저장</div>
             <div>도움이 필요하신가요?</div>
+        </div>
+
+        <div class="enter2">
+            <a href="" id="enter2link"><i class="fab fa-facebook-f fa-lg" id="facebook" style="color: white; padding:2%; background-color: blue;"></i> Facebook으로 로그인</a>
+        </div>
+
+        <div class="enter3">
+            <div id="inenter3">Netflix 회원이 아닌가요?</div> <a href="" id="enter3link">지금 가입하세요.</a>
+        </div>
+
+        <div class="enter4">
+            이 페이지는 Google reCAPTCHA의 보호를 받아<br>
+            사용자가 로봇이 아님을 확인합니다. <a href="">자세히 알아보기</a>
         </div>
     </div>
     
