@@ -28,7 +28,7 @@ body{
    rgba(20, 20, 20, 0.5) 90%,         
    rgba(20, 20, 20, 0.75) 95%,
    rgba(20, 20, 20, 1) 100%),
-   url("main.jpg");
+   url("../img/main.jpg");
    height: 100vh;
    background-size: cover;
    background-position: center;
@@ -41,7 +41,7 @@ body{
 
 .member{
     background-color: black;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 4px;
     margin-top: 1%;
     margin-left:  35%;
@@ -96,13 +96,6 @@ body{
     margin: 2%;
 }
 
-.enter1{
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    justify-content:space-between;
-    font-size: 0.75em;
-}
 input[id="cb1"] {
 	display: none;
 }
@@ -121,10 +114,61 @@ input[id="cb1"]:checked + label {
     border: 2px solid white;
     border-radius: 4px;
 }
+#cb2{
+    margin-top: 1.5%;
+    color :white;
+}
+
+.enter1{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content:space-between;
+    font-size: 0.75em;
+}
+.enter2{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: left;
+    font-size: 0.7em;
+}
+#enter2link{
+    color :#737373;
+}
+.enter3{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: left;
+}
+#inenter3{
+    color :#737373;
+    font-size: 0.9em;
+}
+#enter3link{
+    color: white;
+    margin-left: 2%;
+    font-size: 0.9em;
+}
+.enter4{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20%;
+    color :#737373;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+a { text-decoration:none} 
+a:hover { text-decoration: underline;}
 
 .bottom{
     color:gray;
     position: relative;
+    padding-top: 5%;
     margin-top: 5%;
     margin-left: 20%;
     margin-right: 10%;
@@ -147,6 +191,7 @@ input[id="cb1"]:checked + label {
 }
 .bottomlast{
     font-size: 0.65em;
+    padding-bottom: 10%;
 }
 
 

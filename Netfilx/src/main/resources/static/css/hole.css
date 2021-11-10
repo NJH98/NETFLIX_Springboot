@@ -50,7 +50,7 @@ body{
    rgba(20, 20, 20, 0.5) 90%,         
    rgba(20, 20, 20, 0.75) 95%,
    rgba(20, 20, 20, 1) 100%),
-   url("main.jpg");
+   url("../img/main.jpg");
    height: 100vh;
    background-size: cover;
    background-position: center;
