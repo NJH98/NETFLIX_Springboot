@@ -17,7 +17,7 @@
      Name : <input type="text" name="username"> <br />
      Phone : <input type="text" name="phone"> <br />
      Age : <input type="text" name="age"> <br />
-     <input type="radio" name="gender" value="man" checked>남자
+     <input type="radio" name="gender" value="sx" checked>남자
      <input type="radio" name="gender" value="woman">여자<br>
      <input type="submit" value="가입" > <br />
   </form>

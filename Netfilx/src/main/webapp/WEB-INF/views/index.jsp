@@ -33,7 +33,7 @@
         <div class="member4"> 
             <form>
                 <input id="input1" type="text" placeholder="이메일 주소">
-                <input id="input2" type="button" onclick="location.href='/member/welcome2'" value="시작하기">
+                <input id="input2" type="button" onclick="location.href='member/welcome2'" value="시작하기">
             </form>
         </div>
     </div>
@@ -130,7 +130,7 @@
             <div class="member4"> 
                 <form>
                     <input id="input1" type="text" placeholder="이메일 주소">
-                    <input id="input2" type="button" onclick="location.href='/member/welcome2'" value="시작하기">
+                    <input id="input2" type="button" onclick="location.href='member/welcome2'" value="시작하기">
                 </form>
             </div>
         </div>
