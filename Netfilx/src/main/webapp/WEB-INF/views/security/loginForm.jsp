@@ -31,15 +31,15 @@
 
         <div class="enter1">
             <div><input id="cb1" type = "checkbox"><label for="cb1">V</label>로그인 정보 저장</div>
-            <a href="" id="cb2">도움이 필요하신가요?</a>
+            <a href="" id="cb2" >도움이 필요하신가요?</a>
         </div>
 
         <div class="enter2">
-            <a href="" id="enter2link"><i class="fab fa-facebook-f fa-lg" id="facebook" style="color: white; padding:2%; background-color: blue;"></i> Facebook으로 로그인</a>
+            <a href="memberjoinForm" id="enter2link"><i class="fab fa-facebook-f fa-lg" id="facebook" style="color: white; padding:2%; background-color: blue;"></i> Facebook으로 로그인</a>
         </div>
 
         <div class="enter3">
-            <div id="inenter3">Netflix 회원이 아닌가요?</div> <a href="" id="enter3link">지금 가입하세요.</a>
+            <div id="inenter3">Netflix 회원이 아닌가요?</div> <a href="memberjoinForm" id="enter3link">지금 가입하세요.</a>
         </div>
 
         <div class="enter4">

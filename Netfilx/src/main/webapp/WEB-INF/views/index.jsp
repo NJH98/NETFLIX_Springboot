@@ -21,7 +21,6 @@
         <div class="menu">
             <div class="language"><i class="fas fa-globe"></i> 한국어 <i class="fas fa-caret-down fa-lg"></i></div>
             <div class="login" type="button" onclick="location.href='member/welcome2'">로그인</div>
-            <div class="login" type="button" onclick="location.href='memberjoinForm'">회원가입</div>
         </div>
     </div>
     <div class="member">
