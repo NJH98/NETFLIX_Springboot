@@ -14,8 +14,3 @@
               values(#{email}, #{password}, #{username}, #{phone}, #{age}, #{sx}, #{authority}, #{enabled})
        </insert>
 </mapper>
-
-
-
-
-
