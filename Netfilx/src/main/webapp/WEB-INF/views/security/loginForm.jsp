@@ -31,7 +31,7 @@
 
         <div class="enter1">
             <div><input id="cb1" type = "checkbox"><label for="cb1">V</label>로그인 정보 저장</div>
-            <div>도움이 필요하신가요?</div>
+            <a href="" id="cb2">도움이 필요하신가요?</a>
         </div>
 
         <div class="enter2">
