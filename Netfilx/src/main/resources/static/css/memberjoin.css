@@ -1,0 +1,138 @@
+body{
+    font-size: 18px;
+}
+
+.logo{
+    margin-left: 3%;
+}
+.loginbanner{
+    margin-right: 3%;
+}
+#banner{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+a { text-decoration:none} 
+a:hover { text-decoration: underline;}
+
+.member{
+    margin-top: 2%;
+    margin-left: 35%;
+}
+.membertitle{
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-bottom: 1%;
+}
+.membertitle2{
+    font-size: 1em;
+    margin-bottom: 1%;
+}
+
+#input1{
+    margin-bottom: 1%;
+    width: 45%;
+    height: 50px;
+}
+#input3{
+    margin-bottom: 3%;
+}
+
+.enter1{
+    font-size: 0.9em;
+    width: 45%;
+}
+
+input[id="cb1"] {
+	display: none;
+}
+input[id="cb1"] + label {
+    color :white;
+    background-color: white;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-left: 1%;
+	width: 25px;
+	height: 25px;
+	border: 1px solid black;
+}
+input[id="cb1"]:checked + label {
+    font-weight: 900;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-left: 1.2%;
+    color:#0075E1;
+	background-color: white;
+    border: 1px solid #0075E1;
+}
+
+input[id="cb2"] {
+	display: none;
+}
+input[id="cb2"] + label {
+    color :white;
+    background-color: white;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-left: 1%;
+	width: 25px;
+	height: 25px;
+	border: 1px solid black;
+}
+input[id="cb2"]:checked + label {
+    font-weight: 900;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-left: 1.2%;
+    color:#0075E1;
+	background-color: white;
+    border: 1px solid #0075E1;
+}
+
+input[id="btn"]{
+    color: white;
+    background-color: red;
+    height: 50px;
+    width: 45%;
+    border: 1px solid red;
+    border-radius: 4px;
+    vertical-align: middle;
+    font-size:1em;
+    outline:none;
+}
+
+.downcolor{
+    background-color:#F3F3F3;
+}
+.bottom{
+    color:gray;
+    position: relative;
+    padding-top: 2%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.bottomtable{
+    font-size: 0.7em;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+}
+.bottomlanguage{
+    font-size: 0.9em;
+    border: 1px solid ;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 3%;
+    padding: 10px 5px 0px 5px;
+    height: 50px;
+    width: 12%;
+}
+.bottomlast{
+    font-size: 0.65em;
+    padding-bottom: 3%;
+}
