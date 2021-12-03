@@ -30,9 +30,9 @@
         <div class="member3">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</div>
         <br>
         <div class="member4"> 
-            <form>
-                <input id="input1" type="text" placeholder="이메일 주소">
-                <input id="input2" type="button" onclick="location.href='member/welcome2'" value="시작하기">
+            <form method="post" action="/loginForm">
+                <input id="input1" type="text" name="emailid"placeholder="이메일 주소">
+                <input id="input2" type="submit" value="시작하기">
             </form>
         </div>
     </div>

@@ -24,11 +24,10 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
             <div class="membertitle">로그인</div>
             <c:if test="${param.error != null}" ></c:if>
-            <div><input id="input1" type="text" placeholder="이메일 주소 또는 전화번호" name="j_useremail"></div>
+            <div><input id="input1" type="text" placeholder="이메일 주소 또는 전화번호" name="j_useremail" value="${param.emailid}"></div>
             <div><input id="input2" type="password" placeholder="비밀번호" name="j_password"></div>
             <div><input id="input3" type="submit" value="로그인"></div>
         </form>
-
         <div class="enter1">
             <div><input id="cb1" type = "checkbox"><label for="cb1">V</label>로그인 정보 저장</div>
             <a href="" id="cb2" >도움이 필요하신가요?</a>
