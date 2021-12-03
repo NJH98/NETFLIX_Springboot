@@ -3,14 +3,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="css/login.css">
-    <title>Document</title>
+    <title>Netfilx</title>
 </head>
 <body>
     <div class="story1">
@@ -21,9 +21,9 @@
     
     <div class="member">
         <form action="aaa" method="post">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
             <div class="membertitle">로그인</div>
-            <c:if test="${param.error != null}" >
-     </c:if>
+            <c:if test="${param.error != null}" ></c:if>
             <div><input id="input1" type="text" placeholder="이메일 주소 또는 전화번호" name="j_useremail"></div>
             <div><input id="input2" type="password" placeholder="비밀번호" name="j_password"></div>
             <div><input id="input3" type="submit" value="로그인"></div>

@@ -9,13 +9,8 @@
        select * from userinfo where email=#{param1}
     </select>
     
-    <insert id="save" parameterType="com.it.springboot.daodto.UserlistDto" >
+    <insert id="save" parameterType="com.it.springboot.daodto.UserlistDto">
        insert into userinfo (email,password,username,phone,age,sx,authority,enabled)
               values(#{email}, #{password}, #{username}, #{phone}, #{age}, #{sx}, #{authority}, #{enabled})
        </insert>
 </mapper>
-
-
-
-
-

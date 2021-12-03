@@ -10,6 +10,7 @@ public class UserlistDto {
 	private String authority;
 	private int enabled;
 
+
 	public String getEmail() {
 		return email;
 	}

@@ -11,7 +11,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="css/hole.css">
     <script src ="css/hole.js"></script>
-    <title>Document</title>
+    <title>Netfilx</title>
 </head>
 <body>
     <div class="story1">

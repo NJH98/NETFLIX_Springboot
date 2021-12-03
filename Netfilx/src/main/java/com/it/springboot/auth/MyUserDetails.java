@@ -3,15 +3,20 @@ package com.it.springboot.auth;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.it.springboot.daodto.IUserlistDao;
 import com.it.springboot.daodto.UserlistDto;
 
 public class MyUserDetails implements UserDetails{
 
 	private UserlistDto user; //컴포지션 - 객체속의 객체
 	
+	@Autowired
+	IUserlistDao dao;
+
 	public MyUserDetails(UserlistDto user) {
 		this.user = user;
 	}
@@ -60,5 +65,4 @@ public class MyUserDetails implements UserDetails{
 		 // 계정이 사용 가능한지 확인하는 로직
 		return true;
 	}
-
 }

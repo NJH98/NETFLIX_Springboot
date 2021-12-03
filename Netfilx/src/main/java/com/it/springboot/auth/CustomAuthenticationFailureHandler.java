@@ -2,7 +2,6 @@ package com.it.springboot.auth;
 
 import java.io.IOException;
 
-import javax.security.auth.login.CredentialExpiredException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

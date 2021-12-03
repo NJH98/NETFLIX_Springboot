@@ -2,14 +2,14 @@ package com.it.springboot.auth;
 
 import java.util.List;
 
+import com.it.springboot.daodto.IUserlistDao;
+import com.it.springboot.daodto.UserlistDto;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import com.it.springboot.daodto.IUserlistDao;
-import com.it.springboot.daodto.UserlistDto;
 
 @Service
 public class MyUserDetailsService implements UserDetailsService {
@@ -36,5 +36,5 @@ public class MyUserDetailsService implements UserDetailsService {
 		MyUserDetails pd = new MyUserDetails(dto);   		                                          // �떆�걧由ы떚 �꽭�뀡�뿉 ���옣�맖
 		return pd;  
 	}
-	
+
 }

@@ -35,6 +35,11 @@ a:hover { text-decoration: underline;}
     width: 45%;
     height: 50px;
 }
+#email{
+    margin-bottom: 1%;
+    width: 45%;
+    height: 50px;
+}
 #input3{
     margin-bottom: 3%;
 }

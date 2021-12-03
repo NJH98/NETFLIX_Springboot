@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.it.springboot.daodto.IUserlistDao">
+    
+    <select id = "emailCheck" parameterType="com.it.springboot.daodto.UserlistDto"
+    resultType = "int">
+    select count(*) from userinfo where email = #{eamil}
+    </select>
+
+    <select id="selectUser" resultType="com.it.springboot.daodto.UserlistDto">
+    select * from userinfo order by username asc
+    </select>
+
+    <update id="disableMember" parameterType="com.it.springboot.daodto.UserlistDto">
+        UPDATE userinfo SET authority = 3 WHERE authority = 1
+    </update>
+
+</mapper>

@@ -10,9 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="css/memberjoin.css">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <title>Netflix</title>
 </head>
 <body>
+    <script type="application/js" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <div class="navbar">
         <div class="logo"><a href=""><img src="https://fontmeme.com/permalink/210925/ad178911c18eded696ff02234a6c53b8.png" alt="netflix-type" border="0"></a></div>
         <div class="loginbanner"><a href="/loginForm" id="banner">로그인</a></div>
@@ -23,13 +25,14 @@
             <div class="membertitle">비밀번호를 설정해 맴버십을 시작하세요.</div>
             <div class="membertitle2">몇 단계만 더 거치면 넷플릭스 가입완료! <br>
             복잡한 단계는 모두 없앴습니다.</div>
-            <input id="input1" type="text" name="email" placeholder="이메일 주소">  <br/>
-            <input id="input1" type="password" name="password" placeholder="비밀번호">  <br/>
-            <input id="input1" type="text" name="username" placeholder="본인성명">  <br/>
-            <input id="input1" type="text" name="phone" placeholder="휴대폰 번호 - 없이 입력하세요">  <br/>
-            <input id="input1" type="text" name="age" placeholder="나이">       <br/>
+            <input id="email" type="email" name="email" placeholder="이메일 주소">  
+            <button class="emailCheck" type="button" id="emailCheck" onclick="fn_emailCheck();" value="N"> 중복확인 </button>
+            <input id="password" type="password" name="password" placeholder="비밀번호">  <br/>
+            <input id="username" type="text" name="username" placeholder="본인성명">  <br/>
+            <input id="phone" type="text" name="phone" placeholder="휴대폰 번호 - 없이 입력하세요">  <br/>
+            <input id="age" type="text" name="age" placeholder="나이">       <br/>
             성별 : &nbsp;
-            <input id="input3" type="radio" name="gender" value="sx" checked>남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="sx" type="radio" name="sx" value="sx" checked>남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input id="input3" type="radio" name="gender" value="woman">여자        <br/>
 
             <div class="enter1">
@@ -77,6 +80,25 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" language="javascript">
+    function fn_emailCheck() {
+        $.ajax({
+            url : "/security/emailCheck",
+            type : "POST",
+            dataType :"JSON",
+            data : {"email" : $("#email").val()},
+            success : function (data) {
+                if(data == 1) {
+                    alert("중복된 이메일입니다.");
+                } else if (data == 0) {
+                    $("#emailCheck").attr("value", "Y");
+                    alert("사용 가능한 이메일입니다.")
+                }
+            }
+
+        });
+    }
+    </script>
 </body>
 </html>
 
