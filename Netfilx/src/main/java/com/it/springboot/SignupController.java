@@ -37,7 +37,7 @@ public class SignupController {
 		return result;
 	}
 
-    	@RequestMapping("/memberSaveDB")
+    @RequestMapping("/memberSaveDB")
     public String memberSaveDB(HttpServletRequest req){
     	String email=req.getParameter("email");
     	String encpwd= pwdEncoder.encode(req.getParameter("password"));

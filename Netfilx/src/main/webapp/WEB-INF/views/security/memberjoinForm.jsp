@@ -27,12 +27,12 @@
             복잡한 단계는 모두 없앴습니다.</div>
             <input id="email" type="email" name="email" placeholder="이메일 주소">  
             <button class="emailCheck" type="button" id="emailCheck" onclick="fn_emailCheck();" value="N"> 중복확인 </button>
-            <input id="password" type="password" name="password" placeholder="비밀번호">  <br/>
-            <input id="username" type="text" name="username" placeholder="본인성명">  <br/>
-            <input id="phone" type="text" name="phone" placeholder="휴대폰 번호 - 없이 입력하세요">  <br/>
-            <input id="age" type="text" name="age" placeholder="나이">       <br/>
+            <input id="input1" type="password" name="password" placeholder="비밀번호">  <br/>
+            <input id="input1" type="text" name="username" placeholder="본인성명">  <br/>
+            <input id="input1" type="text" name="phone" placeholder="휴대폰 번호 - 없이 입력하세요">  <br/>
+            <input id="input1" type="text" name="age" placeholder="나이">       <br/>
             성별 : &nbsp;
-            <input id="sx" type="radio" name="sx" value="sx" checked>남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="input3" type="radio" name="sx" value="sx" checked>남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input id="input3" type="radio" name="gender" value="woman">여자        <br/>
 
             <div class="enter1">
