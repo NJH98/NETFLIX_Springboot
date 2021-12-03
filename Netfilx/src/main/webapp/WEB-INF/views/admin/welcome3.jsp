@@ -56,14 +56,14 @@
                 </thead>
 
                 <tbody class="tbody" id="tbody">
-                <c:forEach items="${userinfo}" var="m">
+                <c:forEach items="${userinfo}" var="vo">
 	            <tr>
-	            	<td>${m.email}</td>
-	            	<td>${m.username}</td>
-		            <td>${m.phone}</td> 
-		            <td>${m.age}</td>
-		            <td>${m.sx}</td>
-		            <td>${m.authority}</td>
+	            	<td>${vo.email}</td>
+	            	<td>${vo.username}</td>
+		            <td>${vo.phone}</td> 
+		            <td>${vo.age}</td>
+		            <td>${vo.sx}</td>
+		            <td>${vo.authority}</td>
 	            </tr>
 	            </c:forEach>
                 </tbody>

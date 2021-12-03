@@ -5,12 +5,14 @@
 
 <mapper namespace="com.it.springboot.daodto.IUserlistDao">
     
+    
+
     <select id = "emailCheck" parameterType="com.it.springboot.daodto.UserlistDto"
     resultType = "int">
     select count(*) from userinfo where email = #{eamil}
     </select>
 
-    <select id="selectUser" resultType="com.it.springboot.daodto.UserlistDto">
+    <select id="list" resultType="com.it.springboot.daodto.UserlistDto">
     select * from userinfo order by username asc
     </select>
 
