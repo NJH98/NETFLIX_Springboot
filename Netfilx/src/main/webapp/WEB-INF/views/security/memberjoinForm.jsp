@@ -25,7 +25,7 @@
             <div class="membertitle">비밀번호를 설정해 맴버십을 시작하세요.</div>
             <div class="membertitle2">몇 단계만 더 거치면 넷플릭스 가입완료! <br>
             복잡한 단계는 모두 없앴습니다.</div>
-            <input id="email" type="email" name="email" placeholder="이메일 주소">  
+            <input id="email" type="text" name="email" placeholder="이메일 주소">  
             <button class="emailCheck" type="button" id="emailCheck" onclick="fn_emailCheck();" value="N"> 중복확인 </button>
             <input id="input1" type="password" name="password" placeholder="비밀번호">  <br/>
             <input id="input1" type="text" name="username" placeholder="본인성명">  <br/>

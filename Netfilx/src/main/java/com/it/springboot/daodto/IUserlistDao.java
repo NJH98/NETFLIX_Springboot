@@ -10,6 +10,6 @@ public interface IUserlistDao{
    public List<UserlistDto> findUser(String email);
    public void save(UserlistDto dto);
    public List<UserlistDto> selectUser(UserlistDto userlistDto);
-   void register(UserlistDto userlistDto) throws Exception;
+   // void register(UserlistDto userlistDto) throws Exception;
    int emailCheck(String email) throws Exception;
    }

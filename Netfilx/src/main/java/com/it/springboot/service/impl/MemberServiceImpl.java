@@ -1,7 +1,6 @@
 package com.it.springboot.service.impl;
 
 import com.it.springboot.daodto.IUserlistDao;
-import com.it.springboot.daodto.UserlistDto;
 import com.it.springboot.service.MemberService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +24,9 @@ public class MemberServiceImpl implements MemberService{
         return result;
     }
 
-    @Override
-    public void register(UserlistDto userlistDto) throws Exception {
-        iUserlistDao.register(userlistDto);
+    // @Override
+    // public void register(UserlistDto userlistDto) throws Exception {
+    //     iUserlistDao.register(userlistDto);
         
-    }
+    // }
 }
