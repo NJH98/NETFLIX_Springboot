@@ -28,10 +28,10 @@ public class MyController {
 		return "member/welcome2";
 	}
 	
-	@RequestMapping("/admin/admin")
+	@RequestMapping("/master")
 	public String welcome3() {
 		
-		return "admin/admin";
+		return "/admin/master";
 	}
 	
 	@RequestMapping("/loginForm")
