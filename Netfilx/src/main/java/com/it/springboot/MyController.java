@@ -34,12 +34,6 @@ public class MyController {
 		return "admin/master";
 	}
 
-	@RequestMapping("/chart")
-	public String chart() {
-		
-		return "/admin/chart";
-	}
-	
 	@RequestMapping("/loginForm")
 	public String loginForm() {
 		return "security/loginForm"; //security/loginForm.jsp

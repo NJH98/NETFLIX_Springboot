@@ -13,15 +13,16 @@ public class AdminController {
     @Autowired
     IUserlistDao dao;
 
-    // @RequestMapping("/")
-    // public String root() throws Exception{
-    //     return "redirect:list";
-    // }
-
     @RequestMapping("/list")
     public String userlistPage(Model model) {
         model.addAttribute("list",dao.listDao());
         return "admin/list";
     }
+
+    @RequestMapping("/chart")
+	public String chart() {
+		
+		return "/admin/chart";
+	}
 
 }
