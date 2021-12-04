@@ -32,8 +32,8 @@
             <input id="input1" type="text" name="phone" placeholder="휴대폰 번호 - 없이 입력하세요">  <br/>
             <input id="input1" type="text" name="age" placeholder="나이">       <br/>
             성별 : &nbsp;
-            <input id="input3" type="radio" name="sx" value="sx" checked>남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input id="input3" type="radio" name="gender" value="woman">여자        <br/>
+            <input id="input3" type="radio" name="sx" value="남자" checked>남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="input3" type="radio" name="sx" value="여자">여자        <br/>
 
             <div class="enter1">
                 <div><input id="cb1" type = "checkbox"><label for="cb1">V</label>예 저는 <a href="">개인정보 처리방침</a>에 따른 개인정보 수집 및 활용에 동의합니다.</div>

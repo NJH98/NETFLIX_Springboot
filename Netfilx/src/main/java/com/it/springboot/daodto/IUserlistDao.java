@@ -12,8 +12,8 @@ public interface IUserlistDao{
    public List<UserlistDto> selectUser(UserlistDto userlistDto);
    // void register(UserlistDto userlistDto) throws Exception;
    int emailCheck(String email) throws Exception;
+   public List<UserlistDto> listDao();
 
-
-   }
+}
 
    

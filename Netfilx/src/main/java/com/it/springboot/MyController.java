@@ -29,7 +29,7 @@ public class MyController {
 	}
 	
 	@RequestMapping("/master")
-	public String welcome3() {
+	public String master() {
 		
 		return "/admin/master";
 	}

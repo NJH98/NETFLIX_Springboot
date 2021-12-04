@@ -21,7 +21,7 @@
                     <div class="inner"><a href="">HOME</a></div>
                     <div class="inner"><a href="">사용자 비율</a></div>
                     <div class="inner"><a href="">선호컨텐츠</a></div>
-                    <div class="inner"><a href="">사용자 관리</a></div>
+                    <div class="inner"><a href="/list">사용자 관리</a></div>
                 </div>
                 <div class="rightmenu">
                     <div class="rightinner"><i class="fas fa-search fa-la"></i></div>

@@ -25,11 +25,6 @@ public class SignupController {
 	@Autowired
 	private BCryptPasswordEncoder pwdEncoder;
 
-    // @RequestMapping(value = "/memberSaveDB", method = RequestMethod.GET)
-    // public void registerGET() throws Exception {
-
-    // }
-
 	@ResponseBody
 	@RequestMapping(value = "/security/emailCheck" , method = RequestMethod.POST)
 	public int emailCheck(String email) throws Exception {
@@ -44,6 +39,7 @@ public class SignupController {
     	String username=req.getParameter("username");
     	String phone=req.getParameter("phone");
     	String age=req.getParameter("age");
+		String sx=req.getParameter("sx");
     	
     	UserlistDto dto = new UserlistDto();
     	dto.setEmail(email);
@@ -51,7 +47,7 @@ public class SignupController {
     	dto.setUsername(username);
     	dto.setPhone(phone);
     	dto.setAge(age);
-    	dto.setSx(1);
+    	dto.setSx(sx);
     	dto.setAuthority("USER");
     	dto.setEnabled(1);
     	

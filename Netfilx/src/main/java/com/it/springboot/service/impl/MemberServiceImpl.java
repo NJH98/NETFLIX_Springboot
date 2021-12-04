@@ -1,6 +1,5 @@
 package com.it.springboot.service.impl;
 
-
 import com.it.springboot.daodto.IUserlistDao;
 import com.it.springboot.service.MemberService;
 
@@ -24,4 +23,5 @@ public class MemberServiceImpl implements MemberService{
         int result = iUserlistDao.emailCheck(email);
         return result;
     }
+
 }

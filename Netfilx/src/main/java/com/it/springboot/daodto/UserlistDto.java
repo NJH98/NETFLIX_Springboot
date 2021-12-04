@@ -1,12 +1,15 @@
 package com.it.springboot.daodto;
 
+import lombok.Data;
+
+@Data
 public class UserlistDto {
 	private String email;
 	private String password;
 	private String username;
 	private String phone;
 	private String age;
-	private int sx;
+	private String sx;
 	private String authority;
 	private int enabled;
 
@@ -51,11 +54,11 @@ public class UserlistDto {
 		this.age = age;
 	}
 	
-	public int getSx() {
+	public String getSx() {
 		return sx;
 	}
 
-	public void setSx(int sx) {
+	public void setSx(String sx) {
 		this.sx = sx;
 	}
 

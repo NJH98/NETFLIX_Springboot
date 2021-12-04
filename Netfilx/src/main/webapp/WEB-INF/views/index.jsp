@@ -20,7 +20,7 @@
         <div class="logo"><img src="https://fontmeme.com/permalink/210925/ad178911c18eded696ff02234a6c53b8.png" alt="netflix-type" border="0"></div>
         <div class="menu">
             <div class="language"><i class="fas fa-globe"></i> 한국어 <i class="fas fa-caret-down fa-lg"></i></div>
-            <div class="login" type="button" onclick="location.href='member/welcome2'">로그인</div>
+            <div class="login" type="button" onclick="location.href='/loginForm'">로그인</div>
         </div>
     </div>
     <div class="member">
@@ -127,9 +127,9 @@
                 <div class="member3">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</div>
                     <br>
             <div class="member4"> 
-                <form>
-                    <input id="input1" type="text" placeholder="이메일 주소">
-                    <input id="input2" type="button" onclick="location.href='member/welcome2'" value="시작하기">
+                <form method="post" action="/loginForm">
+                    <input id="input1" type="text" name="emailid"placeholder="이메일 주소">
+                    <input id="input2" type="submit" value="시작하기">
                 </form>
             </div>
         </div>
