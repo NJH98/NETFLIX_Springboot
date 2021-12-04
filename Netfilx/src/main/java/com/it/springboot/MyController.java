@@ -31,7 +31,7 @@ public class MyController {
 	@RequestMapping("/master")
 	public String master() {
 		
-		return "/admin/master";
+		return "admin/master";
 	}
 
 	@RequestMapping("/chart")
