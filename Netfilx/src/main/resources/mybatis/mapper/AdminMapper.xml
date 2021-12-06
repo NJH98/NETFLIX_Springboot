@@ -9,4 +9,11 @@
     delete from userinfo where email = #{_email}
     </delete>
 
+    <select id = "getWomenCount" resultType="int">
+        select count(*) from userinfo where sx = "남자";
+    </select>
+
+    <select id = "getMenCount" resultType="int">
+        select count(*) from userinfo where sx = "여자";
+    </select>
 </mapper>
