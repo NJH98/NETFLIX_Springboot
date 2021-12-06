@@ -29,6 +29,7 @@
 		            <td>${dto.age}</td>
 		            <td>${dto.sx}</td>
 		            <td>${dto.authority}</td>
+                    <td><a href="delete?email=${dto.email}">삭제</a></td>
 	            </tr>
                     </c:forEach>
             </table>

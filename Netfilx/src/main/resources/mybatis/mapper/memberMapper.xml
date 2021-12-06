@@ -14,8 +14,4 @@
     select count(*) from userinfo where email = #{eamil}
     </select>
 
-    <update id="disableMember" parameterType="com.it.springboot.daodto.UserlistDto">
-        UPDATE userinfo SET authority = 3 WHERE authority = 1
-    </update>
-
 </mapper>

@@ -24,4 +24,10 @@ public class MemberServiceImpl implements MemberService{
         return result;
     }
 
+    // @Override
+    // public void userdelete(UserlistDto dto) throws Exception{
+ 
+    //     iUserlistDao.userdelete(dto);
+    // }
+
 }

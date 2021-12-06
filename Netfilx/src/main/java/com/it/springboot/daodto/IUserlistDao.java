@@ -3,6 +3,7 @@ package com.it.springboot.daodto;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 
 @Mapper
@@ -12,7 +13,9 @@ public interface IUserlistDao{
    public List<UserlistDto> selectUser(UserlistDto userlistDto);
    // void register(UserlistDto userlistDto) throws Exception;
    int emailCheck(String email) throws Exception;
+   
    public List<UserlistDto> listDao();
+   public int userdelete(@Param("_email") String email);
 
 }
 
