@@ -40,7 +40,7 @@
                         <hr>
                         <a href="">계정</a>
                         <a href="">고객 센터</a>
-                        <a href="">넷플릭스에서 로그아웃</a>
+                        <a href="/logout">넷플릭스에서 로그아웃</a>
                     </div>
             </div>
         </div>
