@@ -10,6 +10,10 @@ public class MyController {
     public String root() throws Exception{
         return "index";
 	}
+	@RequestMapping("/main")
+    public String main() throws Exception{
+        return "main";
+	}
 
 	@RequestMapping("/memberjoinForm")
     public String memberjoinForm(){

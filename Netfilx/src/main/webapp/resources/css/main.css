@@ -1,0 +1,350 @@
+body{
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.top{
+    z-index: 1;
+    display: flex;
+}
+.navbar{
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    background:linear-gradient(to top,
+   rgba(20, 20, 20, 0) 0%,
+   rgba(20, 20, 20, 0.25) 15%,
+   rgba(20, 20, 20, 1) 100%);
+}
+#header.active{
+    background-color: black;
+}
+.logo{
+    margin-left: 3%;
+}
+
+.leftmenu{
+    display: flex;
+    color: white;
+    font-size: 0.8em;
+    margin-right: 30%;
+    width: 40%;
+}
+.inner{
+    margin-right: 3%;
+}
+.inner a{
+    color:white;
+    text-decoration:none
+}
+.inner a:hover{
+    color:rgb(201, 200, 200);
+}
+.rightmenu{ 
+    display: flex;
+    color: white;
+    margin-right: 8%;
+}
+.rightinner{
+    margin-right: 30%;
+}
+.dropdown{
+    z-index: 3;
+    margin-top: 1%;
+    margin-left: 96%;
+    display: inline-block;
+    position: fixed;
+}
+.dropbtn{
+    color:white;
+    border: none;
+    background-color:transparent;
+}
+.dropdown-content{
+    display: none;
+    background-color: black;
+    color:white;
+    max-width: 180px;
+    margin-left: -250%;
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+.dropdown-content a{
+    color:white;
+    font-size: 0.7em;
+    padding: 5%;
+    margin: 5%;
+    display: block;
+    text-decoration:none
+}
+.dropdown-content a:hover{
+    text-decoration: underline;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+video{
+    z-index: -10;
+    width: 100%;
+    height: 900px;
+    margin-top: -8%;
+    position:absolute;
+    overflow: hidden;
+}
+.con{
+    z-index: 1;
+    margin-top: 20%;
+    margin-left: 5%;
+    position: absolute;
+}
+.conbtn{
+    display: flex;
+    margin-top: 5%;
+}
+.conbtn1{
+    color: black;
+    background-color: white;
+    height: 45px;
+    width: 20%;
+    border-radius: 4px;
+    font-size:1em;
+    text-align: center;
+    padding-top: 2%;
+    margin-right: 4%;
+}
+.conbtn1:hover{
+    background-color:rgba(255, 255, 255, 0.685);
+}
+.conbtn2{
+    color: white;
+    background-color: gray;
+    height: 45px;
+    width: 35%;
+    border-radius: 4px;
+    font-size:1em;
+    text-align: center;
+    padding-top: 2%;
+}
+.conbtn2:hover{
+    background-color:rgba(128, 128, 128, 0.603);
+}
+.extra{
+    position: absolute;
+    color:white;
+    display: flex;
+    margin-top: 35%;
+    margin-left: 85%;
+    right:0;
+    width:140px;
+    z-index: 2;
+}
+.replaybtn{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 60%;
+    margin-right: 5%;
+}
+.rating{
+    background-color: rgba(170, 170, 170, 0.2);
+    border-left: 3px solid white;
+    padding-left:10px;
+    width: 100%
+}
+
+.mainbord{
+    font-size: 1.3em;
+    font-weight: 900;
+    margin-top: 40%;
+}
+.mainbord1{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+.mainbord2{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+.mainbord3{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+.mainbord4{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.slide{
+    width: 300vw;
+    transition: transform 1s;
+}
+.slide1{
+    width: 300vw;
+    transition: transform 1s;
+}
+.slide2{
+    width: 300vw;
+    transition: transform 1s;
+}
+.slide3{
+    width: 300vw;
+    transition: transform 1s;
+}
+.slide4{
+    width: 300vw;
+    transition: transform 1s;
+}
+
+.slidein{
+    width: 100vw;
+    float: left;
+}
+.imgslide{
+    margin: 1%;
+}
+.imgslide:hover{
+    transform: scale(1.2);
+    transition: .1s;
+    transition-delay: .5s;
+}
+
+.leftbtn{
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.rightbtn{
+    right: 0;
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.leftbtn:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+.rightbtn:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+
+.leftbtn1{
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.rightbtn1{
+    right: 0;
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.leftbtn1:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+.rightbtn1:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+
+.leftbtn2{
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.rightbtn2{
+    right: 0;
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.leftbtn2:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+.rightbtn2:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+
+.leftbtn3{
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.rightbtn3{
+    right: 0;
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.leftbtn3:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+.rightbtn3:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+
+.leftbtn4{
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.rightbtn4{
+    right: 0;
+    margin-top: -14%;
+    position:absolute;
+    color: rgb(255, 255, 255, 0);
+    background-color: rgba(170, 170, 170, 0);
+    border:none;
+    height:195px;
+}
+.leftbtn4:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+.rightbtn4:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.5);
+}
+
+.bottom{
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.452);
+}
