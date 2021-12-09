@@ -1,4 +1,4 @@
-package com.it.springboot;
+package com.it.springboot.Controller;
 
 import java.util.Locale;
 
