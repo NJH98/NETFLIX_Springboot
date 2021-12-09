@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+.back{
+    width: 100%;
+    position:absolute;
+    color:rgba(255, 255, 255, 0);
+    border:none;
+    background-color: rgba(0, 0, 0, 0);
+}
+.back:hover{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fas{
+    margin-top: 1%;
+    margin-right: 80%;
+}
+.fas:hover{
+    color: white;
+    transform: scale(1.2);
+    transition: .0.3s;
+}
+iframe{
+    margin-top: 3%;
+}

@@ -11,8 +11,12 @@ public class MyController {
         return "index";
 	}
 	@RequestMapping("/main")
-    public String main() throws Exception{
+    public String main(){
         return "main";
+	}
+	@RequestMapping("/play")
+    public String play(){
+        return "play";
 	}
 
 	@RequestMapping("/memberjoinForm")
