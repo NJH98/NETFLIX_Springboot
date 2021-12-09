@@ -16,7 +16,7 @@
     <body>
         <div class="top">
         <div class="navbar" id="header">
-            <div class="logo"><img src="https://fontmeme.com/permalink/211118/9674e36e3cec6a501176dfd4cb409a4e.png" alt="bebas-neue-font" border="0"></div>
+            <div class="logo"><img src="https://fontmeme.com/permalink/211209/d02c5a114c824a421ad2827d991390e1.png" alt="bebas-neue-font" border="0"></div>
                 <div class="leftmenu">
                     <div class="inner"><a href="">HOME</a></div>
                     <div class="inner"><a href="/chart">사용자 비율</a></div>
