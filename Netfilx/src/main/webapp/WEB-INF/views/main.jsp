@@ -67,175 +67,101 @@
     
         <div id="video"></div>
         
-        <div class="mainbord" style="overflow: hidden;">
-            &nbsp;&nbsp;&nbsp;&nbsp;콘텐츠 리스트 종목 목록
-            <div class="slide">
-                <script>
-                    for(var i = 0; i <= 2; i++){
-                        document.write("<div class='slidein'>");
-                            for(var j = 0; j <= 3; j++){
-                                document.write("<a href=''><img class='imgslide' src='https://occ-0-3098-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY3GFzL8R5ockoibzhPi8DveBUM-yN6YsNNGsqntb67HR5-8n5wD9HUxowVKNlOXDkG3yqGt3lIlSDizLS-qB1kDfkYSDqFQEWDGwWQ8Ix_miUL-vOt2LDQJAunuyqy8eGRYLhkrtqORtJsQi4f_gk2qUpoAqoAp0W0JnI90lcnnpGO-Ro_mgoq10MHvr4H-Qxxs2d2lcOfQVzGGzptYaLGG.jpg?r=171'></a>");
-                            }
-                        document.write("</div>");
-                    }
-                </script>
-            </div>
-        </div>
-    
-        <button class="leftbtn"> ◀ </button>
-        <button class="rightbtn"> ▶ </button>
-    
         <script>
-        var a = 0;
-        document.querySelector('.rightbtn').addEventListener('click', function(){
-            if (a<200){
-            a = a+100;
-            document.querySelector('.slide').style.transform = 'translate(-'+a+'vw)';
-            }
-        })
-        document.querySelector('.leftbtn').addEventListener('click', function(){
-            if (a>99){
-            a = a-100;
-            document.querySelector('.slide').style.transform = 'translate(-'+a+'vw)';
-            }
-        })
-        </script>
-        
-        <div class="mainbord1" style="overflow: hidden;">
-            &nbsp;&nbsp;&nbsp;&nbsp;콘텐츠 리스트 종목 목록
-            <div class="slide1">
-                <script>
-                    for(var i = 0; i <= 2; i++){
-                        document.write("<div class='slidein'>");
-                            for(var j = 0; j <= 3; j++){
-                                document.write("<a href=''><img class='imgslide' src='https://occ-0-3098-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWVxo0fkTf8ZZoL22ToSmE0TIYwV0si_9P9xCNqtba8qmyqp7-YCapdqUJlsG2pT2p4fgzjR-yVOi999ecks4_7Q8tSCz_U1knT6HA_8n2xfKUh6yA2LtXcQSd_g.jpg?r=5ce'></a>");
-                            }
-                        document.write("</div>");
-                    }
-                </script>
-            </div>
-        </div>
-        
-        <button class="leftbtn1"> ◀ </button>
-        <button class="rightbtn1"> ▶ </button>
-    
-        <script>
-        var a1 = 0;
-        document.querySelector('.rightbtn1').addEventListener('click', function(){
-            if (a1<200){
-            a1 = a1+100;
-            document.querySelector('.slide1').style.transform = 'translate(-'+a1+'vw)';
-            }
-        })
-        document.querySelector('.leftbtn1').addEventListener('click', function(){
-            if (a1>99){
-            a1 = a1-100;
-            document.querySelector('.slide1').style.transform = 'translate(-'+a1+'vw)';
-            }
-        })
-        </script>
-    
-        <div class="mainbord2" style="overflow: hidden;">
-        &nbsp;&nbsp;&nbsp;&nbsp;콘텐츠 리스트 종목 목록
-        <div class="slide2">
-            <script>
-                for(var i = 0; i <= 2; i++){
-                    document.write("<div class='slidein'>");
-                        for(var j = 0; j <= 3; j++){
-                            document.write("<a href=''><img class='imgslide' src='https://occ-0-3098-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUCtCMy8Y_gY74oQNwsTI9LZ3m8geheUcf5uDPpSSn1eCOYRSHx6iv5135Wi74dsfmBZLyoLu0TUR_KnbM0K67GD86bpieGNOp-oKpvULgFQkrjsmXGlHFLLoAKsSEwWlou3gkX2VQQ8H5G2BneDziTTHB4TTQ8TEa0mngHg_1FB55oXv86sbBwX4IYCVrxUzmfmkqiJJyN7Sp9BlZWuF8B5.jpg?r=eee'></a>");
+            var arrNumber = [0,0,0,0,0,0];
+            var arrComent = ["콘텐츠 리스트 종목 목록1",
+                            "콘텐츠 리스트 종목 목록2",
+                            "콘텐츠 리스트 종목 목록3",
+                            "콘텐츠 리스트 종목 목록4",
+                            "콘텐츠 리스트 종목 목록5",
+                            "콘텐츠 리스트 종목 목록6"];
+            for(var k = 1; k<=5; k++){
+                document.write("<div class='mainbord"+k+"' style='overflow: hidden;'>");
+                    document.write("&nbsp;&nbsp;&nbsp;&nbsp;"+arrComent[k]);
+                    document.write("<div class='slide"+k+"'>");
+                        for(var i = 0; i <= 2; i++){
+                            document.write("<div class='slidein'>");
+                                for(var j = 0; j <= 3; j++){
+                                    document.write("<a href=''><img class='imgslide' src='https://occ-0-3098-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY3GFzL8R5ockoibzhPi8DveBUM-yN6YsNNGsqntb67HR5-8n5wD9HUxowVKNlOXDkG3yqGt3lIlSDizLS-qB1kDfkYSDqFQEWDGwWQ8Ix_miUL-vOt2LDQJAunuyqy8eGRYLhkrtqORtJsQi4f_gk2qUpoAqoAp0W0JnI90lcnnpGO-Ro_mgoq10MHvr4H-Qxxs2d2lcOfQVzGGzptYaLGG.jpg?r=171'></a>");
+                                }
+                            document.write("</div>");
                         }
                     document.write("</div>");
+                document.write("</div>");
+                document.write("<button class='leftbtn"+k+"'> ◀ </button>");
+                document.write("<button class='rightbtn"+k+"'> ▶ </button>");
+            }
+        </script>
+    
+        <script>
+            var arrNumber = [0,0,0,0,0,0];
+            
+            document.querySelector('.rightbtn1').addEventListener('click', function(){
+                if (arrNumber[1]<199){
+                arrNumber[1] = arrNumber[1]+100;
+                document.querySelector('.slide1').style.transform = 'translate(-'+arrNumber[1]+'vw)';
                 }
-            </script>
-        </div>
-        </div>
+            })
+            document.querySelector('.leftbtn1').addEventListener('click', function(){
+                if (arrNumber[1]>99){
+                arrNumber[1] = arrNumber[1]-100;
+                document.querySelector('.slide1').style.transform = 'translate(-'+arrNumber[1]+'vw)';
+                }
+            })
+    //--------------------------------------------------------------------------------------------------------
+            document.querySelector('.rightbtn2').addEventListener('click', function(){
+                if (arrNumber[2]<199){
+                arrNumber[2] = arrNumber[2]+100;
+                document.querySelector('.slide2').style.transform = 'translate(-'+arrNumber[2]+'vw)';
+                }
+            })
+            document.querySelector('.leftbtn2').addEventListener('click', function(){
+                if (arrNumber[2]>99){
+                arrNumber[2] = arrNumber[2]-100;
+                document.querySelector('.slide2').style.transform = 'translate(-'+arrNumber[2]+'vw)';
+                }
+            })
+    //--------------------------------------------------------------------------------------------------------
+            document.querySelector('.rightbtn3').addEventListener('click', function(){
+                if (arrNumber[3]<199){
+                arrNumber[3] = arrNumber[3]+100;
+                document.querySelector('.slide3').style.transform = 'translate(-'+arrNumber[3]+'vw)';
+                }
+            })
+            document.querySelector('.leftbtn3').addEventListener('click', function(){
+                if (arrNumber[3]>99){
+                arrNumber[3] = arrNumber[3]-100;
+                document.querySelector('.slide3').style.transform = 'translate(-'+arrNumber[3]+'vw)';
+                }
+            })
+    //--------------------------------------------------------------------------------------------------------
+            document.querySelector('.rightbtn4').addEventListener('click', function(){
+                if (arrNumber[4]<199){
+                arrNumber[4] = arrNumber[4]+100;
+                document.querySelector('.slide4').style.transform = 'translate(-'+arrNumber[4]+'vw)';
+                }
+            })
+            document.querySelector('.leftbtn4').addEventListener('click', function(){
+                if (arrNumber[4]>99){
+                arrNumber[4] = arrNumber[4]-100;
+                document.querySelector('.slide4').style.transform = 'translate(-'+arrNumber[4]+'vw)';
+                }
+            })
+    //--------------------------------------------------------------------------------------------------------
+            document.querySelector('.rightbtn5').addEventListener('click', function(){
+                if (arrNumber[5]<199){
+                arrNumber[5] = arrNumber[5]+100;
+                document.querySelector('.slide5').style.transform = 'translate(-'+arrNumber[5]+'vw)';
+                }
+            })
+            document.querySelector('.leftbtn5').addEventListener('click', function(){
+                if (arrNumber[5]>99){
+                arrNumber[5] = arrNumber[5]-100;
+                document.querySelector('.slide5').style.transform = 'translate(-'+arrNumber[5]+'vw)';
+                }
+            })
     
-        <button class="leftbtn2"> ◀ </button>
-        <button class="rightbtn2"> ▶ </button>
-    
-        <script>
-        var a2 = 0;
-        document.querySelector('.rightbtn2').addEventListener('click', function(){
-            if (a2<200){
-            a2 = a2+100;
-            document.querySelector('.slide2').style.transform = 'translate(-'+a2+'vw)';
-            }
-        })
-        document.querySelector('.leftbtn2').addEventListener('click', function(){
-            if (a2>99){
-            a2 = a2-100;
-            document.querySelector('.slide2').style.transform = 'translate(-'+a2+'vw)';
-            }
-        })
         </script>
-    
-        <div class="mainbord3" style="overflow: hidden;">
-            &nbsp;&nbsp;&nbsp;&nbsp;콘텐츠 리스트 종목 목록
-            <div class="slide3">
-                <script>
-                    for(var i = 0; i <= 2; i++){
-                        document.write("<div class='slidein'>");
-                            for(var j = 0; j <= 3; j++){
-                                document.write("<a href=''><img class='imgslide' src='https://occ-0-3098-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZDEvhRIKkF4HLJqwIrUNNDmMQVeevjeLsFuOn8LZ2gc7pEmhtPs3xw_o22vi_6NKkZywAcXiH8KaiABsqGrB-TY4w8.webp?r=a92'></a>");
-                            }
-                        document.write("</div>");
-                    }
-                </script>
-            </div>
-        </div>
-    
-        <button class="leftbtn3"> ◀ </button>
-        <button class="rightbtn3"> ▶ </button>
-    
-        <script>
-        var a3 = 0;
-        document.querySelector('.rightbtn3').addEventListener('click', function(){
-            if (a3<200){
-            a3 = a3+100;
-            document.querySelector('.slide3').style.transform = 'translate(-'+a3+'vw)';
-            }
-        })
-        document.querySelector('.leftbtn3').addEventListener('click', function(){
-            if (a3>99){
-            a3 = a3-100;
-            document.querySelector('.slide3').style.transform = 'translate(-'+a3+'vw)';
-            }
-        })
-        </script>
-    
-        <div class="mainbord4" style="overflow: hidden;">
-            &nbsp;&nbsp;&nbsp;&nbsp;콘텐츠 리스트 종목 목록
-            <div class="slide4">
-                <script>
-                    for(var i = 0; i <= 2; i++){
-                        document.write("<div class='slidein'>");
-                            for(var j = 0; j <= 3; j++){
-                                document.write("<a href=''><img class='imgslide' src='https://occ-0-3098-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS4YHLe-H-44Kt1_HqnWSGeW8cAhFk6aVGJkiwJ_NlfShBobFt0_PVw4fwjtjBK79eOywuaYCwq5U02UQOcpPmh4HtA.webp?r=3ad'></a>");
-                            }
-                        document.write("</div>");
-                    }
-                </script>
-            </div>
-        </div>
-    
-        <button class="leftbtn4"> ◀ </button>
-        <button class="rightbtn4"> ▶ </button>
-    
-    <script>
-    var a4 = 0;
-    document.querySelector('.rightbtn4').addEventListener('click', function(){
-        if (a4<200){
-        a4 = a4+100;
-        document.querySelector('.slide4').style.transform = 'translate(-'+a4+'vw)';
-        }
-    })
-    document.querySelector('.leftbtn4').addEventListener('click', function(){
-        if (a4>99){
-        a4 = a4-100;
-        document.querySelector('.slide4').style.transform = 'translate(-'+a4+'vw)';
-        }
-    })
-    </script>
     
         <div class="bottom">
             <div>질문이 있으신가요? 문의 전화:  080-001-9587</div>
