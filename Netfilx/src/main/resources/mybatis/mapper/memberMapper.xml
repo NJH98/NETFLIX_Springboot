@@ -9,8 +9,8 @@
         select * from userinfo order by username desc
     </select>
 
-    <select id="content" resultType="com.it.springboot.daodto.ContentDto" >
-        select * from contents_table
+    <select id="imgurl" resultType="com.it.springboot.daodto.ContentDto" >
+        select imgurl from contents_table
     </select>
 
     <select id = "emailCheck" parameterType="com.it.springboot.daodto.UserlistDto"

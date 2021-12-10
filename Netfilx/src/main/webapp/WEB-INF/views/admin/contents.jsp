@@ -20,8 +20,8 @@
                 <div class="leftmenu">
                     <div class="inner"><a href="/master">HOME</a></div>
                     <div class="inner"><a href="/chart">사용자 비율</a></div>
-                    <div class="inner"><a href="/content"><strong><u>컨텐츠 관리</u></strong></a></div>
-                    <div class="inner"><a href="/list">사용자 관리</a></div>
+                    <div class="inner"><a href="">선호컨텐츠</a></div>
+                    <div class="inner"><a href="/list"><strong><u>사용자 관리</u></strong></a></div>
                 </div>
                 <div class="rightmenu">
                     <div class="rightinner"><i class="fas fa-search fa-la"></i></div>
@@ -38,7 +38,7 @@
                         <hr>
                         <a href="">계정</a>
                         <a href="">고객 센터</a>
-                        <a href="/logout">넷플릭스에서 로그아웃</a>
+                        <a href="">넷플릭스에서 로그아웃</a>
                     </div>
             </div>
         </div>
@@ -63,5 +63,9 @@
                 </c:forEach>
             </tbody>
           </table>
+          <div>
+            ${imgurl}
+          </div>
+
 </body>
 </html>

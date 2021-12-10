@@ -7,6 +7,7 @@ public class ContentDto {
     private String imgurl;
     private String videourl;
     private String title;
+    private String category;
 
     public String getImgurl() {
 		return imgurl;
@@ -32,4 +33,11 @@ public class ContentDto {
 		this.title = title;
 	}
 
+    public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
 }
