@@ -43,6 +43,7 @@
     </head>
 
     <body>
+        <h1>${menCount}</h1>
         <script
 
 	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
