@@ -9,6 +9,10 @@
         select * from userinfo order by username desc
     </select>
 
+    <select id="imgurl" resultType="com.it.springboot.daodto.ContentDto" >
+        select imgurl from contents_table
+    </select>
+
     <select id = "emailCheck" parameterType="com.it.springboot.daodto.UserlistDto"
     resultType = "int">
     select count(*) from userinfo where email = #{eamil}

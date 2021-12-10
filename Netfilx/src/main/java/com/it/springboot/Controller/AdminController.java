@@ -18,8 +18,10 @@ public class AdminController {
     @RequestMapping("/list")
     public String userlistPage(Model model) {
         model.addAttribute("list",dao.listDao());
+        model.addAttribute("imgurl", dao.imgurl());
         return "admin/list";
     }
+
 
     @RequestMapping("/delete")
     public String delete(HttpServletRequest req, Model model){

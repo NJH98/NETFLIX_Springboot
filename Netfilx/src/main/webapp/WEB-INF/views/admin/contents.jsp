@@ -46,12 +46,9 @@
         <table class="mtable">
             <thead>
                 <tr>
-                    <th scope="cols">email</th>
-                    <th scope="cols">username</th>
-                    <th scope="cols">phone</th>
-                    <th scope="cols">age</th>
-                    <th scope="cols">sx</th>
-                    <th scope="cols">authority</th>
+                    <th scope="cols">title</th>
+                    <th scope="cols">imgurl</th>
+                    <th scope="cols">videourl</th>
                     <th scope="cols">정지 회원 처리</th>
                 </tr>
             </thead>
@@ -61,19 +58,14 @@
                         <th scope="row">${dto.email}</th>
                         <td>${dto.username}</td>
                         <td>${dto.phone}</td> 
-                        <td>${dto.age}</td>
-                        <td>${dto.sx}</td>
-                        <td>${dto.authority}</td>
-                        
                         <td><a href="delete?email=${dto.email}">삭제</a></td>
                     </tr>
                 </c:forEach>
             </tbody>
           </table>
           <div>
-            <!-- <c:forEach items="${imgurl}" var="dto">
-             ${dto.imgurl}
-            </c:forEach> -->
-        </div>
+            ${imgurl}
+          </div>
+
 </body>
 </html>
