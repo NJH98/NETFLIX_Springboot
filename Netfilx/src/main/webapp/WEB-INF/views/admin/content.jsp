@@ -53,12 +53,12 @@
                 </tr>
             </thead>
             <tbody>
-                <c:forEach items="${list}" var="dto">
+                <c:forEach items="${content}" var="dto">
                     <tr>
-                        <th scope="row">${dto.email}</th>
-                        <td>${dto.username}</td>
-                        <td>${dto.phone}</td> 
-                        <td><a href="delete?email=${dto.email}">삭제</a></td>
+                        <th scope="row">${dto.title}</th>
+                        <td>${dto.imgurl}</td>
+                        <td>${dto.videourl}</td> 
+                        <td><a href="contentdelete?title=${dto.title}">삭제</a></td>
                     </tr>
                 </c:forEach>
             </tbody>

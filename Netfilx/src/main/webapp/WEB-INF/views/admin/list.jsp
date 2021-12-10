@@ -71,9 +71,6 @@
             </tbody>
           </table>
           <div>
-            <!-- <c:forEach items="${imgurl}" var="dto">
-             ${dto.imgurl}
-            </c:forEach> -->
         </div>
 </body>
 </html>
