@@ -30,9 +30,5 @@ public class AdminController {
                 
     }
 
-    @RequestMapping("/chart")
-	public String chart() {
-		
-		return "/admin/chart";
-	}
+
 }

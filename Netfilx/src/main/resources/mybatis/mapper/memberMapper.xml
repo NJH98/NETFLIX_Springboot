@@ -13,4 +13,14 @@
     resultType = "int">
     select count(*) from userinfo where email = #{eamil}
     </select>
+
+    <select id = "menCount" parameterType="com.it.springboot.daodto.UserlistDto"
+    resultType = "int">
+    select count(*) from userinfo where sx = '남자'
+    </select>
+
+    <select id = "womenCount" parameterType="com.it.springboot.daodto.UserlistDto"
+    resultType = "int">
+    select count(*) from userinfo where sx = '여자'
+    </select>
 </mapper>

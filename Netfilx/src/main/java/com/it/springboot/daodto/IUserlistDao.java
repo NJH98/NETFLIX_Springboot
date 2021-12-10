@@ -14,8 +14,11 @@ public interface IUserlistDao{
    int emailCheck(String email) throws Exception;
    public List<UserlistDto> listDao();
    public int userdelete(@Param("_email") String email);
-   public int getWomenCount();
-   public int getMenCount();
+   //public int getWomenCount();
+   //public int getMenCount();
+
+   int getMenCount(String sx) throws Exception;
+   int getWomenCount(String sx) throws Exception;
 }
 
 
