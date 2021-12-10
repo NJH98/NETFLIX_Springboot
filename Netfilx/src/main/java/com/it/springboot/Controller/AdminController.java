@@ -18,10 +18,14 @@ public class AdminController {
     @RequestMapping("/list")
     public String userlistPage(Model model) {
         model.addAttribute("list",dao.listDao());
-        model.addAttribute("imgurl", dao.imgurl());
         return "admin/list";
     }
 
+    @RequestMapping("/content")
+    public String contentPage(Model model) {
+        model.addAttribute("content",dao.content());
+        return "admin/content";
+    }
 
     @RequestMapping("/delete")
     public String delete(HttpServletRequest req, Model model){
@@ -32,14 +36,23 @@ public class AdminController {
                 
     }
 
+    @RequestMapping("/contentdelete")
+    public String contentdelete(HttpServletRequest req, Model model){
+
+        dao.contentdelete(req.getParameter("title"));
+
+        return "redirect:/content";
+                
+    }
+
     @RequestMapping("/chart")
 	public String chart() {
 		
 		return "/admin/chart";
 	}
-    @RequestMapping("/content")
-	public String content() {
+    // @RequestMapping("/content")
+	// public String content() {
 		
-		return "/admin/content";
-	}
+	// 	return "/admin/content";
+	// }
 }

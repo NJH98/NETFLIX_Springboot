@@ -9,6 +9,10 @@
     delete from userinfo where email = #{_email}
     </delete>
 
+    <delete id="contentdelete">
+    delete from contents_table where title = #{_title}
+    </delete>
+
     <select id = "getWomenCount" resultType="int">
         select count(*) from userinfo where sx = 1
     </select>
