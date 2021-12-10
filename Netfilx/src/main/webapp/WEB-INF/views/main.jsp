@@ -67,7 +67,9 @@
     
         <div id="video"></div>
         
+        
         <script>
+            
             var arrNumber = [0,0,0,0,0,0];
             var arrComent = ["콘텐츠 리스트 종목 목록1",
                             "콘텐츠 리스트 종목 목록2",
@@ -75,6 +77,7 @@
                             "콘텐츠 리스트 종목 목록4",
                             "콘텐츠 리스트 종목 목록5",
                             "콘텐츠 리스트 종목 목록6"];
+                            
             for(var k = 1; k<=5; k++){
                 document.write("<div class='mainbord"+k+"' style='overflow: hidden;'>");
                     document.write("&nbsp;&nbsp;&nbsp;&nbsp;"+arrComent[k]);
