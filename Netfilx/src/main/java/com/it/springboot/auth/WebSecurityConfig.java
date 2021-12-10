@@ -13,7 +13,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	CustomAuthenticationFailureHandler authFH;
-	
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
@@ -22,9 +22,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/security/**").permitAll()
                 .antMatchers("/memberjoinForm").permitAll()
                 .antMatchers("/guest/**").permitAll()
-                .antMatchers("/admin/**").permitAll()
-                .antMatchers("/member/**").permitAll();
-                //.anyRequest().authenticated();
+                .antMatchers("/master").hasAnyRole("ADMIN")
+                .antMatchers("/main").hasAnyRole("ADMIN", "USER");
+                // .anyRequest().authenticated()
                 // .anyRequest().permitAll();
  
         http.formLogin()
@@ -49,14 +49,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public BCryptPasswordEncoder passwordEncoder() {
       return new BCryptPasswordEncoder();
     }
-    
-//    @Override
-
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
-//    System.out.println(passwordEncoder().encode("rmsepdy3"));
-//    }
-    
 }
 
 

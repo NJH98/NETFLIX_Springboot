@@ -48,7 +48,7 @@ public class SignupController {
     	dto.setPhone(phone);
     	dto.setAge(age);
     	dto.setSx(sx);
-    	dto.setAuthority("USER");
+    	dto.setAuthority("ROLE_USER");
     	dto.setEnabled(1);
     	
     	
