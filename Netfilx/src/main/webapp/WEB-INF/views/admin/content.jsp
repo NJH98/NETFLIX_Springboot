@@ -18,9 +18,9 @@
         <div class="navbar" id="header">
             <div class="logo"><img src="https://fontmeme.com/permalink/211209/d02c5a114c824a421ad2827d991390e1.png" alt="bebas-neue-font" border="0"></div>
                 <div class="leftmenu">
-                    <div class="inner"><a href="/master"><strong><u>HOME</u></strong></a></div>
+                    <div class="inner"><a href="/master">HOME</a></div>
                     <div class="inner"><a href="/chart">사용자 비율</a></div>
-                    <div class="inner"><a href="/content">컨텐츠 관리</a></div>
+                    <div class="inner"><a href="/content"><strong><u>컨텐츠 관리</u></strong></a></div>
                     <div class="inner"><a href="/list">사용자 관리</a></div>
                 </div>
                 <div class="rightmenu">
@@ -42,15 +42,26 @@
                     </div>
             </div>
         </div>
-       <div class="mastermain">
-           <div class="warning"><i class="fas fa-exclamation-triangle fa-2x"></i>관계자외 출입금지<i class="fas fa-exclamation-triangle fa-2x"></i></div>
-           <div class="warningcoment">
-                관리자가 아니라면 로그아웃이후 고객센터로 문의 바랍니다.<br>
-                상단의 매뉴를 사용하여서 업무를 진행할수 있습니다.<br>
-                Home: 현제 보고있는 페이지로 돌아옵니다.<br>              
-                사용자비율: 사용자들의 분포를 그래프로 확인합니다.<br>     
-                사용자관리: 사용자들의 계정을 관리합니다.<br>             
-            </div>
-       </div>
-    </body>
-    </html>
+
+        <table class="mtable">
+            <thead>
+                <tr>
+                    <th scope="cols">title</th>
+                    <th scope="cols">imgurl</th>
+                    <th scope="cols">videourl</th>
+                    <th scope="cols">정지 회원 처리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <c:forEach items="${list}" var="dto">
+                    <tr>
+                        <th scope="row">${dto.email}</th>
+                        <td>${dto.username}</td>
+                        <td>${dto.phone}</td> 
+                        <td><a href="delete?email=${dto.email}">삭제</a></td>
+                    </tr>
+                </c:forEach>
+            </tbody>
+          </table>
+</body>
+</html>

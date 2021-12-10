@@ -37,4 +37,9 @@ public class AdminController {
 		
 		return "/admin/chart";
 	}
+    @RequestMapping("/content")
+	public String content() {
+		
+		return "/admin/content";
+	}
 }
