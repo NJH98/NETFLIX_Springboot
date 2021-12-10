@@ -18,11 +18,11 @@ public class ChartController {
     IUserlistDao dao;
 
   @RequestMapping(value = "", method = RequestMethod.GET)
-  	public String home(Locale locale, Model model)throws Exception {
+  	public String chart(String sx, Model model)throws Exception {
 
 
-  		int womenCount = dao.getWomenCount();
-  		int menCount = dao.getMenCount();
+  		int womenCount = dao.getWomenCount(sx);
+  		int menCount = dao.getMenCount(sx);
 
   		model.addAttribute("menCount", menCount);
   		model.addAttribute("womenCount", womenCount);

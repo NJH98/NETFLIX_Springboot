@@ -24,6 +24,20 @@ public class MemberServiceImpl implements MemberService{
         return result;
     }
 
+    @Override
+    public int getMenCount(String sx) throws Exception {
+        int result = iUserlistDao.getMenCount(sx);
+        return result;
+    }
+
+    @Override
+    public int getWomenCount(String sx) throws Exception {
+        int result = iUserlistDao.getWomenCount(sx);
+        return result;
+    }
+
+
+
     // @Override
     // public void userdelete(UserlistDto dto) throws Exception{
  

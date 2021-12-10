@@ -36,6 +36,9 @@ public class AdminController {
                 
     }
 
+<<<<<<< HEAD
+
+=======
     @RequestMapping("/contentdelete")
     public String contentdelete(HttpServletRequest req, Model model){
 
@@ -50,4 +53,5 @@ public class AdminController {
 		
 		return "/admin/chart";
 	}
+>>>>>>> d9a443c2f70071e1f395785a4cfb1974f8880667
 }
