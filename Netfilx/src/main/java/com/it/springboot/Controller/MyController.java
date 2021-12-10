@@ -14,10 +14,6 @@ public class MyController {
     public String main(){
         return "main";
 	}
-	@RequestMapping("/play")
-    public String play(){
-        return "play";
-	}
 
 	@RequestMapping("/memberjoinForm")
     public String memberjoinForm(){

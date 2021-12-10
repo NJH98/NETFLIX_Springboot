@@ -83,7 +83,7 @@
                         for(var i = 0; i <= 2; i++){
                             document.write("<div class='slidein'>");
                                 for(var j = 0; j <= 3; j++){
-                                    document.write("<a href=''><img class='imgslide' src='resources/img/conimg/"+conNumber+".jpeg'></a>");
+                                    document.write("<a href='/play"+conNumber+"'><img class='imgslide' src='resources/img/conimg/"+conNumber+".jpeg'></a>");
                                     conNumber = conNumber+1;
                                 }
                             document.write("</div>");
