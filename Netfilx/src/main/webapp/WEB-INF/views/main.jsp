@@ -70,11 +70,12 @@
         <script>
             var arrNumber = [0,0,0,0,0,0];
             var arrComent = ["콘텐츠 리스트 종목 목록1",
-                            "콘텐츠 리스트 종목 목록2",
-                            "콘텐츠 리스트 종목 목록3",
-                            "콘텐츠 리스트 종목 목록4",
-                            "콘텐츠 리스트 종목 목록5",
-                            "콘텐츠 리스트 종목 목록6"];
+                            "액션",
+                            "로맨스, 멜로",
+                            "SF, 공상과학",
+                            "호러, 아포칼립스",
+                            "코미디"];
+            var conNumber = 1;
             for(var k = 1; k<=5; k++){
                 document.write("<div class='mainbord"+k+"' style='overflow: hidden;'>");
                     document.write("&nbsp;&nbsp;&nbsp;&nbsp;"+arrComent[k]);
@@ -82,7 +83,8 @@
                         for(var i = 0; i <= 2; i++){
                             document.write("<div class='slidein'>");
                                 for(var j = 0; j <= 3; j++){
-                                    document.write("<a href=''><img class='imgslide' src='https://occ-0-3098-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY3GFzL8R5ockoibzhPi8DveBUM-yN6YsNNGsqntb67HR5-8n5wD9HUxowVKNlOXDkG3yqGt3lIlSDizLS-qB1kDfkYSDqFQEWDGwWQ8Ix_miUL-vOt2LDQJAunuyqy8eGRYLhkrtqORtJsQi4f_gk2qUpoAqoAp0W0JnI90lcnnpGO-Ro_mgoq10MHvr4H-Qxxs2d2lcOfQVzGGzptYaLGG.jpg?r=171'></a>");
+                                    document.write("<a href=''><img class='imgslide' src='resources/img/conimg/"+conNumber+".jpeg'></a>");
+                                    conNumber = conNumber+1;
                                 }
                             document.write("</div>");
                         }

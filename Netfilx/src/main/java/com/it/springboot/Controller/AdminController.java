@@ -21,6 +21,12 @@ public class AdminController {
         return "admin/list";
     }
 
+    @RequestMapping("/content")
+    public String contentPage(Model model) {
+        model.addAttribute("content",dao.content());
+        return "admin/content";
+    }
+
     @RequestMapping("/delete")
     public String delete(HttpServletRequest req, Model model){
 
@@ -30,5 +36,22 @@ public class AdminController {
                 
     }
 
+<<<<<<< HEAD
 
+=======
+    @RequestMapping("/contentdelete")
+    public String contentdelete(HttpServletRequest req, Model model){
+
+        dao.contentdelete(req.getParameter("title"));
+
+        return "redirect:/content";
+                
+    }
+
+    @RequestMapping("/chart")
+	public String chart() {
+		
+		return "/admin/chart";
+	}
+>>>>>>> d9a443c2f70071e1f395785a4cfb1974f8880667
 }

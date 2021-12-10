@@ -12,13 +12,20 @@ public interface IUserlistDao{
    public void save(UserlistDto dto);
    public List<UserlistDto> selectUser(UserlistDto userlistDto);
    int emailCheck(String email) throws Exception;
+   public List<ContentDto> content();
    public List<UserlistDto> listDao();
    public int userdelete(@Param("_email") String email);
+<<<<<<< HEAD
    //public int getWomenCount();
    //public int getMenCount();
 
    int getMenCount(String sx) throws Exception;
    int getWomenCount(String sx) throws Exception;
+=======
+   public int contentdelete(@Param("_title") String title);
+   public int getWomenCount();
+   public int getMenCount();
+>>>>>>> d9a443c2f70071e1f395785a4cfb1974f8880667
 }
 
 
