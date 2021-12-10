@@ -49,9 +49,4 @@ public class AdminController {
 	public String chart() {
 		
 		return "/admin/chart";
-	}
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 12cb5754b2b428ad05be37bb869ef3949bb26a0e
+    }}
