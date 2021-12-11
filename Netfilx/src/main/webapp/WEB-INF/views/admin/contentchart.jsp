@@ -62,9 +62,9 @@
                 </div>
             </div>
             <script> data = {
-                    datasets: [{ backgroundColor: ['red', 'yellow', 'blue', 'black', 'white'],
+                    datasets: [{ backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(224, 99, 255, 0.2)', 'rgba(99, 102, 255, 0.2)', 'rgba(99, 250, 255, 0.2)', 'rgba(99, 255, 125, 0.2)'],
                     data: ['${actionCount}', '${HorrorCount}', '${RomenceCount}', '${SfCount}', '${ComicCount}'] }],
-                    labels: ['red', 'yellow', 'blue', 'black', 'white']
+                    labels: ['액션', '호러', '로맨스', 'SF', '코믹']
                 };
                 var ctx1 = document.getElementById("myChart1"); var myPieChart = new Chart(ctx1, { type: 'pie', data: data, options: {} });
             </script>
