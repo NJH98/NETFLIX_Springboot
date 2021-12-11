@@ -45,8 +45,4 @@ public class AdminController {
 
     }
 
-    @RequestMapping("/contentchart")
-    public String contentchart() {
-        return "/admin/contentchart";
-    }
 }

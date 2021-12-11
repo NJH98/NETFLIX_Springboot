@@ -6,26 +6,42 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/chart")
 public class ChartController {
 
-    @Autowired
-    IUserlistDao dao;
+	@Autowired
+	IUserlistDao dao;
 
-  @RequestMapping(value = "", method = RequestMethod.GET)
-  	public String chart(String sx, Model model)throws Exception {
+	@RequestMapping("/chart")
+	public String chart(String sx, Model model) throws Exception {
 
+		int womenCount = dao.getWomenCount(sx);
+		int menCount = dao.getMenCount(sx);
 
-  		int womenCount = dao.getWomenCount(sx);
-  		int menCount = dao.getMenCount(sx);
+		model.addAttribute("menCount", menCount);
+		model.addAttribute("womenCount", womenCount);
 
-  		model.addAttribute("menCount", menCount);
-  		model.addAttribute("womenCount", womenCount);
+		return "/admin/chart";
 
-  		return "/admin/chart";
+	}
 
-  	}
+	@RequestMapping("/contentchart")
+	public String contents(String category, Model model) throws Exception {
+
+		int actionCount = dao.getActionCount(category);
+		int HorrorCount = dao.getHorrorCount(category);
+		int RomenceCount = dao.getRomenceCount(category);
+		int SfCount = dao.getSfCount(category);
+		int ComicCount = dao.getComicCount(category);
+
+		model.addAttribute("actionCount", actionCount);
+		model.addAttribute("HorrorCount", HorrorCount);
+		model.addAttribute("RomenceCount", RomenceCount);
+		model.addAttribute("SfCount", SfCount);
+		model.addAttribute("ComicCount", ComicCount);
+
+		return "/admin/contentchart";
+
+	}
 }

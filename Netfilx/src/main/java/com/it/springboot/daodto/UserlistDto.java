@@ -13,7 +13,6 @@ public class UserlistDto {
 	private String authority;
 	private int enabled;
 
-
 	public String getEmail() {
 		return email;
 	}
@@ -21,7 +20,7 @@ public class UserlistDto {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 	public String getPassword() {
 		return password;
 	}
@@ -29,7 +28,7 @@ public class UserlistDto {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 	public String getUsername() {
 		return username;
 	}
@@ -37,7 +36,7 @@ public class UserlistDto {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
+
 	public String getPhone() {
 		return phone;
 	}
@@ -45,7 +44,7 @@ public class UserlistDto {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	
+
 	public String getAge() {
 		return age;
 	}
@@ -53,7 +52,7 @@ public class UserlistDto {
 	public void setAge(String age) {
 		this.age = age;
 	}
-	
+
 	public String getSx() {
 		return sx;
 	}

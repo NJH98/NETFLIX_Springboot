@@ -12,12 +12,32 @@
     <delete id="contentdelete">
     delete from contents_table where title = #{_title}
     </delete>
-
+<!--sxchart-->
     <select id = "getWomenCount" resultType="int">
         select count(*) from userinfo where sx = '남자'
     </select>
 
     <select id = "getMenCount" resultType="int">
         select count(*) from userinfo where sx = '여자'
+    </select>
+<!--contentchart-->
+    <select id = "getActionCount" resultType = "int">
+        select count(*) from contents_table where category = '액션'
+    </select>
+
+    <select id = "getHorrorCount" resultType = "int">
+        select count(*) from contents_table where category = '호러'
+    </select>
+
+    <select id = "getRomenceCount" resultType = "int">
+        select count(*) from contents_table where category = '로맨스'
+    </select>
+
+    <select id = "getSfCount" resultType = "int">
+        select count(*) from contents_table where category = 'SF'
+    </select>
+
+    <select id = "getComicCount" resultType = "int">
+        select count(*) from contents_table where category = '코믹'
     </select>
 </mapper>
