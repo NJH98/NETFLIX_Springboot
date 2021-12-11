@@ -20,6 +20,7 @@
                 <div class="leftmenu">
                     <div class="inner"><a href="/master"><strong><u>HOME</u></strong></a></div>
                     <div class="inner"><a href="/chart">사용자 비율</a></div>
+                    <div class="inner"><a href="/contentchart">컨텐츠 비율</a></div>
                     <div class="inner"><a href="/content">컨텐츠 관리</a></div>
                     <div class="inner"><a href="/list">사용자 관리</a></div>
                 </div>

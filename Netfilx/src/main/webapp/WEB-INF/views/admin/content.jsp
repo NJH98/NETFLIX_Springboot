@@ -20,6 +20,7 @@
                 <div class="leftmenu">
                     <div class="inner"><a href="/master">HOME</a></div>
                     <div class="inner"><a href="/chart">사용자 비율</a></div>
+                    <div class="inner"><a href="/contentchart">컨텐츠 비율</a></div>
                     <div class="inner"><a href="/content"><strong><u>컨텐츠 관리</u></strong></a></div>
                     <div class="inner"><a href="/list">사용자 관리</a></div>
                 </div>
@@ -49,6 +50,7 @@
                     <th scope="cols">title</th>
                     <th scope="cols">imgurl</th>
                     <th scope="cols">videourl</th>
+                    <th scope="cols">category</th>
                     <th scope="cols">정지 회원 처리</th>
                 </tr>
             </thead>
@@ -57,7 +59,8 @@
                     <tr>
                         <th scope="row">${dto.title}</th>
                         <td>${dto.imgurl}</td>
-                        <td>${dto.videourl}</td> 
+                        <td>${dto.videourl}</td>
+                        <td>${dto.category}</td> 
                         <td><a href="contentdelete?title=${dto.title}">삭제</a></td>
                     </tr>
                 </c:forEach>

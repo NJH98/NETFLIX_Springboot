@@ -19,8 +19,8 @@
             <div class="logo"><img src="https://fontmeme.com/permalink/211209/d02c5a114c824a421ad2827d991390e1.png" alt="bebas-neue-font" border="0"></div>
                 <div class="leftmenu">
                     <div class="inner"><a href="/master">HOME</a></div>
-                    <div class="inner"><a href="/chart"><strong><u>사용자 비율</u></strong></a></div>
-                    <div class="inner"><a href="/contentchart">컨텐츠 비율</a></div>
+                    <div class="inner"><a href="/chart">사용자 비율</a></div>
+                    <div class="inner"><a href="/contentchart"><strong><u>컨텐츠 비율</u></strong></a></div>
                     <div class="inner"><a href="/content">컨텐츠 관리</a></div>
                     <div class="inner"><a href="/list">사용자 관리</a></div>
                 </div>
@@ -44,29 +44,20 @@
             </div>
         </div>
         <div class="rhdqor"></div>
-        <div class="container"> 
-            <canvas id="myChart" style="background-color: white;"></canvas> 
-        </div>
-        <script>
-            var ctx = document.getElementById('myChart'); 
-            var myChart = new Chart(ctx, {
-                                    type: 'bar', 
-                                    data:   { 
-                                    labels: ['Red', 'Blue'], 
-                                    datasets: [{
-                                            data: [50, 3], 
-                                            backgroundColor: [ 'rgba(255, 99, 132, 0.2)',
-                                                                'rgba(54, 162, 235, 0.2)',
-                                                                 ], 
-                                            borderColor: [ 'rgba(255, 99, 132, 1)',
-                                                            'rgba(54, 162, 235, 1)', 
-                                                            ], 
-                                            borderWidth: 1 
-                                            }] 
-                                            }, 
-                                            options: { scales: { yAxes: [{ ticks: { beginAtZero: true } }] } } }
-                                    ); 
-        </script>
+        <div class="container">  
+            <div class="card"> 
+                <div class="card-body"> 
+                    <canvas id="myChart1"></canvas> 
+                </div> 
+                <div class="card-footer text-center text-dark"> 
+                    <h4>장르별 콘텐츠 분포</h4> 
+                </div> 
+            </div> 
+    </div>
+    <script> data = { datasets: [{ backgroundColor: ['red','yellow','blue'], data: [10, 20, 30] }], 
+    labels: ['red','yellow','blue'] };
+    var ctx1 = document.getElementById("myChart1"); var myPieChart = new Chart(ctx1, { type: 'pie', data: data, options: {} });
+    </script> 
         
 </body>
 </html>
