@@ -1,8 +1,6 @@
 package com.it.springboot.daodto;
 
-import lombok.Data;
 
-@Data
 public class UserlistDto {
 	private String email;
 	private String password;

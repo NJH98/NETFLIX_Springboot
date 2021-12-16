@@ -1,8 +1,5 @@
 package com.it.springboot.daodto;
 
-import lombok.Data;
-
-@Data
 public class ContentDto {
 	private String imgurl;
 	private String videourl;
