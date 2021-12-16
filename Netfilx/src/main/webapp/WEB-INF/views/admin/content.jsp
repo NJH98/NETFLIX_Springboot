@@ -51,7 +51,7 @@
                     <th scope="cols">imgurl</th>
                     <th scope="cols">videourl</th>
                     <th scope="cols">category</th>
-                    <th scope="cols">정지 회원 처리</th>
+                    <th scope="cols">컨텐츠 삭제</th>
                 </tr>
             </thead>
             <tbody>
